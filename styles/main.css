@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Backgrounds */
+  --bg: #17171d;
+  --surface: #211d25;
+  --surface-hover: #30232d;
+  --border: #42313a;
+
+  /* Your original palette */
+  --palette-1: #311000;
+  --palette-2: #540000;
+  --palette-3: #5d181f;
+  --palette-4: #240c00;
+  --palette-5: #0b1871;
+
+  /* Hack Club accents */
+  --red: #ec3750;
+  --orange: #ff8c37;
+  --yellow: #f1c40f;
+  --green: #33d6a6;
+  --cyan: #5bc0de;
+  --blue: #338eda;
+  --purple: #a633d6;
+
+  /* Text */
+  --text: #f3edf2;
+  --text-secondary: #c2b7c1;
+  --text-muted: #918792;
+
+  /* Interactive */
+  --link: #ff8c37;
+  --link-hover: #ffb477;
+  --accent: #ec3750;
+  --accent-secondary: #a633d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Phantom Sans";
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text);
+}
+
+p {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    padding-block: 15px;
+}
+
+.section {
+    background-color: var(--surface);
+}
+
+.section1 {
+    background-color: var(--surface-hover);
+}
+
+
+.slack-emoji {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.create {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+}
+
+.form label {
+    margin-bottom: -4px;
+}
+
+.form input:not([type="checkbox"]) {
+    width: 100%;
+}
+
+.form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#id-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+    width: 400px;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+    padding: 24px;
+    padding-left: 10px;
+
+    background: #17171d;
+    color: #f0ebfa;
+    border: 2px solid #42313a;
+    border-radius: 16px;
+}
+
+#id-card img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}

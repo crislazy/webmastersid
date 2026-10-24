@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebMaster's ID</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    </head>
+    <body>
+        <main>
+            <section class="title">
+                <h2>WebMaster's ID</h2>
+                <p>Make your own WebMaster's ID and brag about it</p>
+            </section>
+
+            <section class="about section">
+                <h2>About WebMaster's ID</h2>
+                <p>WebMaster's ID is an "ID" that displays information like your username, website, quick things about you and achivements/stamps. You can share it everywhere you want and it's FREE! :wowsers:</p>
+            </section>
+
+            <section class="create section1">
+                <h2>Make your own</h2>
+                <p>Inputs marked with * are required</p>
+                <div class="formdiv">
+                    <form id="createf" class="form">
+                        <small id="error"></small>
+                        <label for="username">Username*</label>
+                        <input type="text" maxlength="14" id="username" name="username" placeholder="Cris" required>
+                        <label for="image">Profile Picture*</label>
+                        <input type="file" id="image" name="image" required>
+                        <label for="url">Website URL*</label>
+                        <input type="text" maxlength="20" id="url" name="url" placeholder="crislzy.xyz" required>
+                        <label for="desc">Short Description*</label>
+                        <input type="text" maxlength="20" id="desc" name="desc" placeholder="Developer Teen" required>
+                        <label>Check Your Achivements(Don't work rn)</label>
+                        <label>
+                            -> Join at least 1 webring:
+                            <input type="checkbox" id="cwebring" name="cwebring" value="1234">
+                        </label>
+                        <label>
+                            -> My website is open-source:
+                            <input type="checkbox" id="copensource" name="copensource">
+                        </label>
+                        <label>
+                            -> My website is self-hosted:
+                            <input type="checkbox" id="cselfhosted" name="cselfhosted">
+                        </label>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <section class="preview section">
+                <h2>Your ID</h2>
+
+                <div id="id-card">
+                    <img id="card-img" src="https://user-cdn.hackclub-assets.com/01a096bf-e2cb-7e4c-aa9e-98303a253dce/pfp.png" />
+                    <div class="card-info">
+                    <h2 id="card-username">Cris</h2>
+                    <p id="card-url">crislzy.xyz</p>
+                    <p id="card-desc">Developer Teen</p>
+                    </div>
+                </div>
+                <button type="button" id="download">Download PNG</button>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="/js/form.js"></script>
+        <script src="https://crislzy.xyz/js/emojis.js" defer></script>
+    </body>
+</html>
