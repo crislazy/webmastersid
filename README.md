@@ -36,7 +36,7 @@ HTML, CSS, JavaScript, [html2canvas](https://html2canvas.hertzen.com/)
 
 *An example of the ID*
 
-<img src="assets/id-example.png" alt="Example WebMaster's ID card" width="400" />
+<img src="assets/id-example.PNG" alt="Example WebMaster's ID card" width="400" />
 
 
 ## Credits
