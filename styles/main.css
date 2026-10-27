@@ -110,6 +110,18 @@ main {
     width: 100%;
 }
 
+.flag {
+    height: 100px;
+    width: auto;
+    position:absolute;
+    left: 5rem;
+    transition: 0.2s;
+}
+
+.flag:hover {
+    transform: scale(1.35) translateY(12px);
+}
+
 .title {
     text-align: center;
     margin-top: 50px;
@@ -134,15 +146,7 @@ section {
     background-color: var(--surface-hover);
 }
 
-
-.slack-emoji {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    vertical-align: middle;
-}
-
+/* Create Form */
 .create {
     display: flex;
     flex-direction: column;
@@ -173,6 +177,22 @@ section {
     text-align: left;
 }
 
+.form input[type="text"],
+.form input[type="file"] {
+    font-family: inherit;
+    color: var(--text);
+
+}
+
+.form input::placeholder {
+    color: var(--text-muted);
+}
+
+#error {
+    color: var(--red);
+}
+
+/* ID Card Preview */
 .preview {
     display: flex;
     flex-direction: column;
@@ -182,27 +202,27 @@ section {
 #id-card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 
     width: 400px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 2/1;
     box-sizing: border-box;
-    padding: 24px;
-    padding-left: 10px;
+    padding: 20px;
 
     background: #17171d;
     color: #f0ebfa;
     border: 2px solid #42313a;
     border-radius: 16px;
+    position: relative;
 }
 
 #id-card img {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .card-info {
@@ -210,4 +230,66 @@ section {
     flex-direction: column;
     gap: 5px;
     justify-content: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.card-info h2 {
+    color: var(--text);
+    font-size: 25px;
+}
+
+#card-url {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+#card-desc {
+    color: var(--text-secondary);
+}
+
+.card-stamps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.stamp {
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: bold;
+    color: var(--bg);
+    font-size: 12px;
+}
+
+.card-credit {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+/* Style for each stamp */
+#w {
+    background: var(--cyan);
+}
+
+#o {
+    background: var(--green);
+}
+
+#s {
+    background: var(--yellow);
+}
+
+
+/* Slack Emojis */
+.slack-emoji {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
 }

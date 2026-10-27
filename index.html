@@ -8,6 +8,7 @@
     </head>
     <body>
         <main>
+            <a href="https://hackclub.com"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" class="flag" /></a>
             <section class="title">
                 <h2>WebMaster's ID</h2>
                 <p>Make your own WebMaster's ID and brag about it</p>
@@ -26,13 +27,13 @@
                         <small id="error"></small>
                         <label for="username">Username*</label>
                         <input type="text" maxlength="14" id="username" name="username" placeholder="Cris" required>
-                        <label for="image">Profile Picture*</label>
+                        <label for="image">Profile Picture(Recommended: 256×256 px)*</label>
                         <input type="file" id="image" name="image" required>
                         <label for="url">Website URL*</label>
                         <input type="text" maxlength="20" id="url" name="url" placeholder="crislzy.xyz" required>
                         <label for="desc">Short Description*</label>
                         <input type="text" maxlength="20" id="desc" name="desc" placeholder="Developer Teen" required>
-                        <label>Check Your Achivements(Don't work rn)</label>
+                        <label>Check Your Achievements</label>
                         <label>
                             -> Join at least 1 webring:
                             <input type="checkbox" id="cwebring" name="cwebring" value="1234">
@@ -55,12 +56,22 @@
                 <div id="id-card">
                     <img id="card-img" src="https://user-cdn.hackclub-assets.com/01a096bf-e2cb-7e4c-aa9e-98303a253dce/pfp.png" />
                     <div class="card-info">
-                    <h2 id="card-username">Cris</h2>
-                    <p id="card-url">crislzy.xyz</p>
-                    <p id="card-desc">Developer Teen</p>
+                        <h2 id="card-username">Cris</h2>
+                        <p id="card-url">crislzy.xyz</p>
+                        <p id="card-desc">Developer Teen</p>
+                        <div class="card-stamps">
+                            <p id="w" class="stamp">Webringer</p>
+                            <p id="o" class="stamp">Open-Sourcer</p>
+                            <p id="s" class="stamp">SelfHosted</p>
+                        </div>
                     </div>
+                    <small class="card-credit">made with id.webcris.icu</small>
                 </div>
                 <button type="button" id="download">Download PNG</button>
+            </section>
+            <section class="footer section1">
+                <h2>Made with HATE :grr: </h2>
+                <p>V0.1(Beta) - Work In Progress</p>
             </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

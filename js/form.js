@@ -23,21 +23,25 @@ form.addEventListener('submit', (event) => {
   const errors = [];
 
   if (!validateUrl(url)) {
-      errors.push('Please enter a valid URL');
+    errors.push('Please enter a valid URL');
   }
 
   const file = image.files[0];
 
   if (file && !file.type.startsWith('image/')) {
-      errors.push('Please upload only image files');
+    errors.push('Please upload only image files');
   }
 
   if (errors.length > 0) {
-      text.textContent = errors.join(' & ');
-      return;
-    }
+    text.textContent = errors.join(' & ');
+    return;
+  }
 
   text.textContent = '';
+
+  document.getElementById("w").style.display = cw.checked ? "block" : "none";
+  document.getElementById("o").style.display = co.checked ? "block" : "none";
+  document.getElementById("s").style.display = cs.checked ? "block" : "none";
 
   document.getElementById('card-username').textContent = username.value;
   document.getElementById('card-img').src = URL.createObjectURL(file);
@@ -50,7 +54,7 @@ document.getElementById('download').addEventListener('click', () => {
 
   html2canvas(card, { scale: 3, backgroundColor: null, useCORS: true }).then(function(canvas) {
     const link = document.createElement('a');
-    link.download = 'webmasters-id.png';
+    link.download = `my-webmastersid.png`;
     link.href = canvas.toDataURL('image/png');
     link.click();
   });
