@@ -28,6 +28,17 @@ HTML, CSS, JavaScript, [html2canvas](https://html2canvas.hertzen.com/)
 
 > Note: This project is work in progress
 
+## Screenshots
+
+*How the website looks*
+
+<img src="assets/page-screenshot.png" alt="Screenshot of the website" width="600" />
+
+*An example of the ID*
+
+<img src="assets/id-example.png" alt="Example WebMaster's ID card" width="400" />
+
+
 ## Credits
 - Font: Phantom Sans by Hack Club
 - License: MIT
